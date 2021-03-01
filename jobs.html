@@ -20,6 +20,41 @@
 </head>
 
 <body>
+    <!-- Notification Bar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .alert {
+      padding: 20px;
+      background-color: #36aef4;
+      color: white;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong><h4>Visite à Thandiani</h4></strong> 1 Day Tour To THANDIANI TOP
+      Date: 8-March- 2021
+    </div>
+
+    <!-- /Notification Bar -->
+    
 
     <div class="d-flex" id="wrapper">
 
@@ -54,14 +89,14 @@
                 <!--Assignment Information-->
                 <br>
                 <div class="jumbotron">
-                    <h3>Career and Jobs</h3>
+                    <h3>Scholarships</h3>
                     <p id="pending-work"></p>
                 </div>
                 <hr style="height:1px;border:none;color:#333;background-color:#333;">
                 <!--Subject Information Ends-->
                 <div class="row">
                 </div>
-                <!--Lectures-->
+                <!--Scholarships-->
 
                 <div class="wrapper mx-auto mt-5">
                     <table id="dtLectures" class="table table-fixed table-responsive" cellspacing="0" width="100%">
@@ -95,7 +130,52 @@
                     </table>
                 </div>
 
-                <!--Lectures Ends-->
+                <!--Scholarships Ends-->
+                   <!--Assignment Information-->
+                   <br>
+                   <div class="jumbotron">
+                       <h3>Internships & Jobs</h3>
+                       <p id="pending-work"></p>
+                   </div>
+                   <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                   <!--Subject Information Ends-->
+                   <div class="row">
+                   </div>
+                <!--Jobs-->
+
+                <div class="wrapper mx-auto mt-5">
+                    <table id="dtLectures" class="table table-fixed table-responsive" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Type
+                                </th>
+                                <th>Orgnization
+                                </th>
+                                <th>Qualification
+                                </th>
+                                <th>Applying Method
+                                </th>
+                                <th>Deadline
+                                </th>
+                                <th>Explanation
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>--------</td>
+                                <td>--------</td>
+                                <td>--------</td>
+                                <td>--------</td>
+                                <td>--------</td>
+                                <td>--------</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Jobs Ends-->
+
             </div>
             <!-- /#page-content-wrapper -->
 
