@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>BSE - 8A</title>
-    <link rel="icon" href="icon.png" type="image/icon type">
+    <link rel="icon" href="icon.PNG" type="image/icon type">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -51,72 +51,45 @@
             <div class="container-fluid">
 
 
-                <!--Subject Information-->
+                <!--Assignment Information-->
                 <br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="http://cuiwah.edu.pk/Downloads/SP21/Semester%20Calendar-Spring%202021.pdf" target="_blank">Download Semester Calendar</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="https://drive.google.com/file/d/1aWPL4B-5PKEjHrvYwIfw0xTKly_jKr5f/view?usp=sharing" target="_blank">Download Course Catalog</a>
-                    </div>
+                <div class="jumbotron">
+                    <h3>Career and Jobs</h3>
+                    <p id="pending-work"></p>
                 </div>
                 <hr style="height:1px;border:none;color:#333;background-color:#333;">
                 <!--Subject Information Ends-->
-
-                <br>
+                <div class="row">
+                </div>
                 <!--Lectures-->
-
-                <h6><b>*These dates may change according to situation.</b></h6>
 
                 <div class="wrapper mx-auto mt-5">
                     <table id="dtLectures" class="table table-fixed table-responsive" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th>Date
+                                <th>Type
                                 </th>
-                                <th>Event
+                                <th>Country/Providers
+                                </th>
+                                <th>Course Level
+                                </th>
+                                <th>Applying Method
+                                </th>
+                                <th>Deadline
+                                </th>
+                                <th>Explanation
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
-
-                            <tr class="expired">
-                                <td>Feb 08 - Feb 14</td>
-                                <td>Course registration week.</td>
-                            </tr>
-
                             <tr>
-                                <td>March 12</td>
-                                <td>Last date to drop courses.</td>
-                            </tr>
-                            <tr>
-                                <td>March 22 - March 28</td>
-                                <td>First sessionals.</td>
-                            </tr>
-                            <tr>
-                                <td>April 30</td>
-                                <td>Last date for withdrawing courses/semester.</td>
-                            </tr>
-                            <tr>
-                                <td>May 03 - May 09</td>
-                                <td>Second sessionals.</td>
-                            </tr>
-                            <tr>
-                                <td>June 25</td>
-                                <td>Submission of FYP Reports (Clearance forms)</td>
-                            </tr>
-                            <tr>
-                                <td>June 25</td>
-                                <td>Last date for classes/attendance lock.</td>
-                            </tr>
-                            <tr>
-                                <td>June 29 - July 11</td>
-                                <td>Terminal exams.</td>
-                            </tr>
-                            <tr>
-                                <td>Aug 06</td>
-                                <td>Final result.</td>
+                                <td>Scholarship</td>
+                                <td>China</td>
+                                <td>Bachelors, Masters, PhD</td>
+                                <td>---</td>
+                                <td>Different for Each University, follow the given link for more.</td>
+                                <td>Chinese President Scholarship Program. 
+                                    <a href="https://www.nationalmeritscholarships.com/chinese-president-scholarship-program.html?fbclid=IwAR3y-YDopRXmf2sulnXAUA8I-g9q4mXmJTI-GC344E7XOSV5oTp0ciHYvh8" target="0">Follow this link for more</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -132,7 +105,6 @@
         <!-- Bootstrap core JavaScript -->
         <script src=" vendor/jquery/jquery.min.js "></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-
         <!-- Menu Toggle Script -->
         <script>
             $("#menu-toggle ").click(function(e) {
@@ -140,12 +112,6 @@
                 $("#wrapper ").toggleClass("toggled ");
             });
         </script>
-        <script>
-            var remLectures = 32 - $('#dtLectures tbody tr').length;
-            document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
-        </script>
-
-
 </body>
 
 </html>
